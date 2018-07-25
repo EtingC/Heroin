@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  MobileFrame
+//
+//  Created by Benson on 2018/3/21.
+//  Copyright © 2018年 Benson. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//引入Masonry两个宏 便于写布局代码
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+//日志系统
+#import <DDLog.h>
+#import <CocoaLumberjack.h>
+#import "TargetConfigContants.h"
+
+//键盘
+//#import "KeyboardManager.h"
+
+//#import "GVUserDefaults+Properties.h"
+
+//#import "MBProgressHUD.h"
+//#import "MBProgressHUD+XX.h"
+// 宏 
+#import "Macros.h"
+#import "Constants.h"
+#import "ThirdMacros.h"
+//Net
+#import "AFNetworking.h"
+//#import "YTKNetwork.h"
+//#import "BaseRequestService.h"
+//#import "NetWorkEnvironment.h"
+//
+//iOS自动布局框架
+//#import "Masonry.h"
+
+//第三方SDK的Key及配置
+//#import "ThirdMacros.h"
+
+//Category
+//#import "NSDictionary+JSONString.h"
+//#import "UIColor+Random.h"
+//#import "UIColor+HEX.h"
+
+#endif /* PrefixHeader_pch */
