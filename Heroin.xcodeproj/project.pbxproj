@@ -15,6 +15,9 @@
 		46EE30112108064C0084230D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE30102108064C0084230D /* main.m */; };
 		46EE301B2108064C0084230D /* HeroinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE301A2108064C0084230D /* HeroinTests.m */; };
 		46EE30262108064C0084230D /* HeroinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE30252108064C0084230D /* HeroinUITests.m */; };
+		46EE303B210809C20084230D /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 46EE303A210809C20084230D /* config.xml */; };
+		46EE303D210809E30084230D /* www in Resources */ = {isa = PBXBuildFile; fileRef = 46EE303C210809E30084230D /* www */; };
+		46EE304121080A4C0084230D /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EE3039210809B90084230D /* libCordova.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 46EE2FFD2108064C0084230D;
 			remoteInfo = Heroin;
+		};
+		46EE3038210809B90084230D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EE3034210809B90084230D /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68A32D7114102E1C006B237C;
+			remoteInfo = CordovaLib;
+		};
+		46EE303E21080A460084230D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EE3034210809B90084230D /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,6 +68,9 @@
 		46EE30212108064C0084230D /* HeroinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EE30252108064C0084230D /* HeroinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeroinUITests.m; sourceTree = "<group>"; };
 		46EE30272108064C0084230D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46EE3034210809B90084230D /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		46EE303A210809C20084230D /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		46EE303C210809E30084230D /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EE304121080A4C0084230D /* libCordova.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,7 @@
 				46EE30192108064C0084230D /* HeroinTests */,
 				46EE30242108064C0084230D /* HeroinUITests */,
 				46EE2FFF2108064C0084230D /* Products */,
+				46EE304021080A4C0084230D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +123,7 @@
 		46EE30002108064C0084230D /* Heroin */ = {
 			isa = PBXGroup;
 			children = (
+				46EE3033210809840084230D /* Web */,
 				46EE30012108064C0084230D /* AppDelegate.h */,
 				46EE30022108064C0084230D /* AppDelegate.m */,
 				46EE30042108064C0084230D /* ViewController.h */,
@@ -132,6 +155,31 @@
 			path = HeroinUITests;
 			sourceTree = "<group>";
 		};
+		46EE3033210809840084230D /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				46EE303C210809E30084230D /* www */,
+				46EE303A210809C20084230D /* config.xml */,
+				46EE3034210809B90084230D /* CordovaLib.xcodeproj */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		46EE3035210809B90084230D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46EE3039210809B90084230D /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46EE304021080A4C0084230D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +194,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				46EE303F21080A460084230D /* PBXTargetDependency */,
 			);
 			name = Heroin;
 			productName = Heroin;
@@ -224,6 +273,12 @@
 			mainGroup = 46EE2FF52108064C0084230D;
 			productRefGroup = 46EE2FFF2108064C0084230D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 46EE3035210809B90084230D /* Products */;
+					ProjectRef = 46EE3034210809B90084230D /* CordovaLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				46EE2FFD2108064C0084230D /* Heroin */,
@@ -233,6 +288,16 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		46EE3039210809B90084230D /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 46EE3038210809B90084230D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		46EE2FFC2108064C0084230D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -241,6 +306,8 @@
 				46EE300E2108064C0084230D /* LaunchScreen.storyboard in Resources */,
 				46EE300B2108064C0084230D /* Assets.xcassets in Resources */,
 				46EE30092108064C0084230D /* Main.storyboard in Resources */,
+				46EE303D210809E30084230D /* www in Resources */,
+				46EE303B210809C20084230D /* config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +366,11 @@
 			isa = PBXTargetDependency;
 			target = 46EE2FFD2108064C0084230D /* Heroin */;
 			targetProxy = 46EE30222108064C0084230D /* PBXContainerItemProxy */;
+		};
+		46EE303F21080A460084230D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 46EE303E21080A460084230D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +506,10 @@
 				DEVELOPMENT_TEAM = Q47C7H5298;
 				INFOPLIST_FILE = Heroin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Benson.Heroin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +524,10 @@
 				DEVELOPMENT_TEAM = Q47C7H5298;
 				INFOPLIST_FILE = Heroin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Benson.Heroin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
