@@ -56,7 +56,7 @@
 #define COLOR_UNDER_LINE [UIColor colorWithRed:198/255.0 green:198/255.0 blue:198/255.0 alpha:1]
 
 //App版本号
-#define appMPVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define appXXVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 // 当前版本
 #define FSystemVersion          ([[[UIDevice currentDevice] systemVersion] floatValue])
 #define DSystemVersion          ([[[UIDevice currentDevice] systemVersion] doubleValue])
@@ -154,9 +154,9 @@
 //})
 
 
-//弱引用/强引用  可配对引用在外面用MPWeakSelf(self)，block用MPStrongSelf(self)  也可以单独引用在外面用MPWeakSelf(self) block里面用weakself
-#define MPWeakSelf(type)  __weak typeof(type) weak##type = type;
-#define MPStrongSelf(type)  __strong typeof(type) type = weak##type;
+//弱引用/强引用  可配对引用在外面用XXWeakSelf(self)，block用XXStrongSelf(self)  也可以单独引用在外面用XXWeakSelf(self) block里面用weakself
+#define XXWeakSelf(type)  __weak typeof(type) weak##type = type;
+#define XXStrongSelf(type)  __strong typeof(type) type = weak##type;
 
 #define weakify(...) \
 ext_keywordify \

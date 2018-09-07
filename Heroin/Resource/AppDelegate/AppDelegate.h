@@ -8,20 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-//#import "GTSDK/GeTuiSdk.h"
-
-//#import <BLLetAccount/BLLetAccount.h>
-//#import <BLLetFamily/BLLetFamily.h>
-//#import <BLLetCore/BLLet.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-//@interface AppDelegate : UIResponder <UIApplicationDelegate,GeTuiSdkDelegate>
 @property (strong, nonatomic) UIWindow *window;
 
-
-//@property(nonatomic,strong)  BLAccount * account;
-//@property(nonatomic,strong)  BLLet *let;
-//@property (nonatomic,strong) BLFamilyController *familyManager;
 
 
 
