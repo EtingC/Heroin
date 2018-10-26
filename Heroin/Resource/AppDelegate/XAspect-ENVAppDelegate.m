@@ -10,7 +10,10 @@
 #import "netWorkHelper.h"
 #import "Keyboard.h"
 #import "XAspect.h"
-
+#import "FileLogger.h"
+#if DEBUG
+#import "FLEXManager.h"
+#endif
 
 /**
  必须要有的宏定义, 而且必须写在最前面
@@ -41,6 +44,15 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
     [netWorkHelper CheckTheNetChange];
     //键盘统一收回处理
     [Keyboard configureBoardManager];
+    
+    //如果是测试本地版本开启调试工具FLEX
+#if DEBUG&LOCAL
+    [[FLEXManager sharedManager] showExplorer];    
+#endif
+    
+    //日志初始化
+    [FileLogger sharedManager];
+    
     
     return XAMessageForward(application:application didFinishLaunchingWithOptions:launchOptions);
 }

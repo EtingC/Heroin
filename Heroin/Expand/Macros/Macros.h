@@ -168,9 +168,4 @@ _Pragma("clang diagnostic ignored \"-Wshadow\"") \
 metamacro_foreach(ext_strongify_,, __VA_ARGS__) \
 _Pragma("clang diagnostic pop")
 
-//上传图片相关
-#define kImageCollectionCell_Width floorf((Main_Screen_Width - 10*2- 10*3)/3)
-//最大的上传图片张数
-#define kupdateMaximumNumberOfImage 12
-
 #endif /* Macros_h */

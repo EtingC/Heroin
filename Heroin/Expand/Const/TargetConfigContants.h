@@ -9,6 +9,11 @@
 #ifndef TargetConfigContants_h
 #define TargetConfigContants_h
 
+
+
+#define ViewDebug  0
+
+
 #if PRODUCT  //产品环境
 
 static NSString* const TargetConfig_NetWork_s=@"";
@@ -19,6 +24,9 @@ static const int ddLogLevel = LOG_LEVEL_ERROR;
 
 //DDLog等级
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
+
+
 
 #endif
 #endif /* TargetConfigContants_h */

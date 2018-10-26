@@ -31,6 +31,7 @@
 
 #pragma mark - WRITE FOR STANDARD
 
++ (void)setBool:(BOOL)Bool forKey:(NSString *)defaultName;
 + (void)setObject:(id)value forKey:(NSString *)defaultName;
 
 #pragma mark - READ ARCHIVE FOR STANDARD

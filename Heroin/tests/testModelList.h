@@ -19,4 +19,7 @@
 @property (nonatomic,copy) NSString *sceneGroup;//sceneGroup = "";
 @property (nonatomic,copy) NSString *state;//state = 1;
 @property (nonatomic,copy) NSString *templateId;//templateId = 1000201;
+
+
++ (NSData *)Controller;
 @end

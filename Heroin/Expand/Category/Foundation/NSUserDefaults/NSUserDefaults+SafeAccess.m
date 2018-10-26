@@ -51,6 +51,12 @@
 
 #pragma mark - WRITE FOR STANDARD
 
++ (void)setBool:(BOOL)Bool forKey:(NSString *)defaultName {
+    [[NSUserDefaults standardUserDefaults] setBool:Bool forKey:defaultName];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+
 + (void)setObject:(id)value forKey:(NSString *)defaultName {
     [[NSUserDefaults standardUserDefaults] setObject:value forKey:defaultName];
     [[NSUserDefaults standardUserDefaults] synchronize];

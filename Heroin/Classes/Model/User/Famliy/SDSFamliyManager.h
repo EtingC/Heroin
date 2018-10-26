@@ -19,7 +19,6 @@
 
 @property (nonatomic,strong) BLFamilyInfo * familyinfo; //这个是登录以后能用，再启动就不管用了
 
-
 @property (nonatomic,strong) DeviceFamilyInfo * deFaInfoData;
 
 @property (nonatomic,strong) NSMutableArray * famliyMutArr;

@@ -10,12 +10,13 @@
 
 @interface UserInfoManager : NSObject
 
-+ (instancetype)sharedTool;
 @property(nonatomic,copy) NSString * account;
 @property (nonatomic,copy) NSString *password;
 @property(nonatomic,copy) NSString *RefreshToken;
 @property(nonatomic,copy) NSString *AccessToken;
 @property (nonatomic,assign) BOOL login;
 @property (nonatomic,copy) NSString * FirstLogin;
+
++ (instancetype)sharedTool;
 
 @end

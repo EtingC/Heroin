@@ -10,4 +10,6 @@
 
 @interface testModel : NSObject
 
+- (NSInteger)creatDataaWithName:(NSString *)tableName Class:(id) obj;
+
 @end

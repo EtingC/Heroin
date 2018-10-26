@@ -14,5 +14,8 @@
 @dynamic name;
 @dynamic role;
 
+@dynamic MBJsPatchTime;
+@dynamic isNoFirstLaunch;
+
 @end
 

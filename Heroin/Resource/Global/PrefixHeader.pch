@@ -24,7 +24,7 @@
 #import "GVUserDefaults+Properties.h"
 
 //#import "MBProgressHUD.h"
-//#import "MBProgressHUD+XX.h"
+#import "MBProgressHUD+XX.h"
 // 宏 
 #import "Macros.h"
 #import "Constants.h"
@@ -34,14 +34,18 @@
 //#import "YTKNetwork.h"
 //#import "BaseRequestService.h"
 //#import "NetWorkEnvironment.h"
-//
+
+//router 路由
+#import "ZIKRouter-umbrella.h"
+
 //iOS自动布局框架
 #import "Masonry.h"
 
 //第三方SDK的Key及配置
-//#import "ThirdMacros.h"
+#import "ThirdMacros.h"
 
 //Category
+#import "SDWebImageManager.h"
 //#import "NSDictionary+JSONString.h"
 //#import "UIColor+Random.h"
 //#import "UIColor+HEX.h"

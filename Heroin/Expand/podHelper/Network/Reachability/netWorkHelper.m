@@ -11,27 +11,25 @@
 @implementation netWorkHelper
 
 + (void)CheckTheNetChange {
+    
+    DDLogInfo(@"CheckTheNetChange  ^_^!");
     AFNetworkReachabilityManager *afNetworkReachabilityManager = [AFNetworkReachabilityManager sharedManager];
     
     [afNetworkReachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         switch (status) {
             case AFNetworkReachabilityStatusNotReachable:{
-                NSLog(@"网络不通：%@",@(status) );
+                [MBProgressHUD showAutoMessage:@"当前网络连接失败，请查看设置"];
+                DDLogInfo(@"网络不通：%@",@(status) );
             }break;
             case AFNetworkReachabilityStatusReachableViaWiFi:{
-                NSLog(@"网络通过WIFI连接：%@",@(status));
+                DDLogInfo(@"网络通过WIFI连接：%@",@(status));
             }break;
             case AFNetworkReachabilityStatusReachableViaWWAN:{
-                NSLog(@"网络通过无线连接：%@",@(status) );
+                DDLogInfo(@"网络通过无线连接：%@",@(status) );
             }break;
             default:
                 break;
         }
-
-        NSLog(@"网络状态返回: %@", AFStringFromNetworkReachabilityStatus(status));
-        NSLog(@"isReachable: %@",@([AFNetworkReachabilityManager sharedManager].isReachable));
-        NSLog(@"isReachableViaWWAN: %@",@([AFNetworkReachabilityManager sharedManager].isReachableViaWWAN));
-        NSLog(@"isReachableViaWiFi: %@",@([AFNetworkReachabilityManager sharedManager].isReachableViaWiFi));
     }];
     [afNetworkReachabilityManager startMonitoring];  //开启网络监视器；
 }

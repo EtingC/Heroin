@@ -15,11 +15,19 @@ pod 'CocoaLumberjack', '~>3.2.0'
 pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 #NetWorking
 pod 'AFNetworking'
+pod 'YTKNetwork', '~> 2.0.4'
+
 #iOS自动布局框架
 pod 'Masonry'
+#低耦合集成TabBarController
+pod 'CYLTabBarController'
 
-#pod 'DZNEmptyDataSet'
+pod 'ZIKRouter', '~> 1.0.2'
+
+pod 'FMDB'
 pod 'MBProgressHUD', '~> 1.1.0'
+pod 'SDWebImage'
+pod 'IQKeyboardManager'
 
   target 'HeroinTests' do
     inherit! :search_paths

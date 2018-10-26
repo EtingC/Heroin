@@ -14,9 +14,11 @@ static NSString* const kMail_cc_ToRecipients_Address = @"zjxucb@gmail.com";
 //网络状态监控地址
 static NSString* const kURL_Reachability_Address = @"www.baidu.com";
 
-
-
 #pragma mark - 参数
-
+typedef NS_ENUM(NSUInteger, Platform) {
+    PlatformBroadLink = 0,
+    PlatformHongyar,
+    PlatformAlibaba
+};
 
 #endif /* Constants_h */

@@ -24,8 +24,8 @@
 /**
  *  自定义图片的提示，3s后自动消息
  *
- *  @param text 要显示的文字
- *  @param icon 图片地址(建议不要太大的图片)
+ *  @param iconName 要显示的图片
+ *  @param title 图片地址(建议不要太大的图片)
  *  @param view 要添加的view
  */
 + (void)showCustomIcon:(NSString *)iconName Title:(NSString *)title ToView:(UIView *)view;
@@ -60,7 +60,7 @@
 /**
  *  自动消失提示,带默认图
  *
- *  @param warn 要显示的文字
+ *  @param Warn 要显示的文字
  *  @param view  要添加的View
  */
 + (void)showWarn:(NSString *)Warn ToView:(UIView *)view;
@@ -79,7 +79,7 @@
 /**
  *  快速显示一条提示信息
  *
- *  @param showAutoMessage 要显示的文字
+ *  @param message 要显示的文字
  */
 + (void)showAutoMessage:(NSString *)message;
 
@@ -106,7 +106,7 @@
 /**
  *  自定义停留时间，无图
  *
- *  @param text 要显示的文字
+ *  @param message 要显示的文字
  *  @param view 要添加的View
  *  @param time 停留时间
  */
@@ -126,7 +126,6 @@
  *  进度条View
  *
  *  @param view     要添加的View
- *  @param model    进度条的样式
  *  @param text     显示的文字
  *
  *  @return 返回使用
